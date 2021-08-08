@@ -20,8 +20,8 @@ function App() {
                 {/* document head manager */}
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>hayste</title>
-                    <link rel="canonical" href="https://hayste.co" />
+                    <title>steamid.shop</title>
+                    <link rel="canonical" href="https://steamid.shop" />
                 </Helmet>
                 
                 {/* background bubbles */}

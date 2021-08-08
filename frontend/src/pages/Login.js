@@ -25,7 +25,7 @@ class Login extends Component {
     componentDidUpdate(prevProps) {
         const { user } = this.props;
         if (!prevProps.user && user)
-            toast.dark(`Welcome back to hayste, ${user.username}!`);
+            toast.dark(`Welcome back to steamid.shop, ${user.username}!`);
     }
 
     onChange = e => {
@@ -46,7 +46,7 @@ class Login extends Component {
                     <div className="flex flex-row items-center mb-8">
                         <div className="h-14 w-14 bg-h-gray-200 rounded-md mr-4 flex-none" />
                         <div className="flex flex-col">
-                            <span className="font-semibold text-white text-3xl">hayste.co</span>
+                            <span className="font-semibold text-white text-3xl">steamid.shop</span>
                             <span className="font-normal">We step in, where speed matters the most</span>
                         </div>
                     </div>
@@ -63,9 +63,9 @@ class Login extends Component {
                         <Input large icon="lock" placeholder="Password" name="password" value={this.state.password} onChange={this.onChange} type="password" />
                         <Button large onClick={e => this.submitLogin(e)}>Login</Button>
                         <span className="self-center font-normal">Forgot your password? <Link to="/recover"><span className="text-white">Click here</span></Link></span>
-                        <span className="self-center font-normal">Want to join hayste? <Link to="/register"><span className="text-white">Click here</span></Link></span>
+                        <span className="self-center font-normal">Want to join steamid.shop? <Link to="/register"><span className="text-white">Click here</span></Link></span>
                     </div>
-                    <div className="text-h-gray-600 font-normal cursor-default self-center">&copy; 2021 HAYSTE</div>
+                    <div className="text-h-gray-600 font-normal cursor-default self-center">&copy; 2021 STEAMID.SHOP</div>
                 </div>
             </Fragment>
         );

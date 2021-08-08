@@ -39,7 +39,7 @@ def coinpayments_ipn(request):
     send_mail(
         f"coinpayments ipn: {ipn_type}",
         json.dumps(request.data, indent = 4),
-        "dev@hayste.co",
+        "dev@steamid.shop",
         ["justin@garofolo.net"]
     )
     return Response(status = status.HTTP_200_OK)
