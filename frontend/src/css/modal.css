@@ -1,0 +1,26 @@
+/*
+    custom styles for react-modal
+    https://github.com/reactjs/react-modal
+*/
+
+.modal {
+    position: absolute;
+    top: 30vh;
+    min-width: 300px;
+    background-color: rgb(16, 16, 16);
+    color: rgb(131, 131, 131);
+    border-radius: 0.5rem;
+    padding: 15px 20px 20px 20px;
+}
+
+.modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(32, 32, 32, 0.5);
+}

@@ -1,0 +1,11 @@
+Django
+djangorestframework
+mysqlclient
+pycryptodome
+django-storages
+boto3
+django-cors-headers
+psutil
+gunicorn
+requests
+django-ses
