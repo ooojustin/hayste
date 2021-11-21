@@ -121,12 +121,8 @@ APPEND_SLASH = False
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'HOST': '147.182.212.134',
-        'NAME': 'steamidshop',
-        'USER': 'steamidshop',
-        'PASSWORD': 'jy&P6z5uJ#qH3F*d&',
-        'PORT': '3306'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'steamidshop.sqlite3'
     }
 }
 
