@@ -40,7 +40,7 @@ class PanelLayout extends Component {
                     {/* site icon & title */}
                     <div className="flex flex-row items-center mb-9">
                         <div className="h-10 w-10 bg-h-gray-200 rounded-md mr-4"></div>
-                        <span className="text-2xl font-semibold text-white">steamid.shop</span>
+                        <span className="text-2xl font-semibold text-white">hayste.co</span>
                     </div>
 
                     {/* navigation links */}
@@ -64,7 +64,7 @@ class PanelLayout extends Component {
                             </svg> Logout
                         </div>
                         <div className="text-h-gray-600 font-normal cursor-default">
-                            &copy; 2021 STEAMID.SHOP
+                            &copy; 2021 HAYSTE
                         </div>
                     </div>
                 

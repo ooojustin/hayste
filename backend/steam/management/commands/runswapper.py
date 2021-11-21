@@ -24,7 +24,7 @@ class Command(BaseCommand):
         # use ip to detect current node, update usage statistics
         node = SwapperNode.objects.get(ip_address = ip_address)
         node.update_stats()
-        print("Currently running steamid.shop swapper on node:", node)
+        print("Currently running hayste.co swapper on node:", node)
 
         # start threads to process swaps in the background. runs indefinitely.
         while True:

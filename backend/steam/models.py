@@ -27,13 +27,13 @@ class SteamAccount(models.Model):
     def set_url(self, target, session = None, name = None, verify = True, watermark = False):
         """
         Changes the users custom steam url.
-        By default, this will also result in the persona name being changed to their steamid.shop username if another isn't specified.
+        By default, this will also result in the persona name being changed to their hayste username if another isn't specified.
 
         Parameters:
         session (requests.Session): An existing session object to use. This can save time if established beforehand.
-        name (str): A persona name to use, instead of the steamid.shop account owner username. 
+        name (str): A persona name to use, instead of the hayste.co account owner username. 
         verify (bool): After claiming the url, verify it was claimed with an additional request to 'get_current_url'.
-        watermark (bool): Set the steam account's "real name" to the steamid.shop domain.
+        watermark (bool): Set the steam account's "real name" to the hayste.co domain.
         """
         
         t1 = time.time()
@@ -51,8 +51,8 @@ class SteamAccount(models.Model):
         }
         
         if watermark:
-            # params["real_name"] = "steamid.shop"
-            params["personaName"] += "@steamid.shop"
+            # params["real_name"] = "hayste.co"
+            params["personaName"] += "@hayste"
         
         files = { k: (None, v) for k, v in params.items() }
         response = session.post(url, files = files, timeout = 5)

@@ -20,15 +20,10 @@ function App() {
                 {/* document head manager */}
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>steamid.shop</title>
-                    <link rel="canonical" href="https://steamid.shop" />
+                    <title>hayste</title>
+                    <link rel="canonical" href="https://hayste.co" />
                 </Helmet>
                 
-                {/* background bubbles */}
-                <div className="w-80 h-80 bg-white rounded-full bg-opacity-01 absolute -inset-20 drop-shadow -z-5"></div>
-                <div className="w-60 h-60 bg-white rounded-full bg-opacity-02 absolute inset-x-96 inset-y-96 drop-shadow -z-5"></div>
-                <div className="w-72 h-72 bg-white rounded-full bg-opacity-01 absolute right-0 bottom-0 drop-shadow -z-5"></div>
-
                 {/* container + default config for toast notifications */}
                 <ToastContainer
                     position="top-center"
